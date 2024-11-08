@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diptesh Das - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Diptesh Das</h1>
+        <p>Researcher at the Department of Computational Biology and Medical Sciences, The University of Tokyo.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.tsudalab.org/en/members/" target="_blank">Lab</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="https://scholar.google.co.in/citations?user=8DWrGBwAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="projects">
+        <h2>Projects (Selected)</h2>
+        <div class="project">
+            <h3>Preference-Optimized Pareto Set Learning (PO-PSL) for Blackbox Optimization</h3>
+            <p style="text-align:justify;">Multi-Objective Optimization (MOO) presents a significant challenge in various 
+                real-world applications. For complex problems, it is usually impossible to find a single solution that optimizes 
+                all objectives simultaneously. In experimental design scenarios, obtaining the entire Pareto set (PS) is beneficial 
+                as it allows for flexible exploration of the design space. We have developed an efficient Pareto set learning (PSL) 
+                algorithm that learns the continuous manifold of the Pareto front (PF). This enables a robot or a domain expert to 
+                explore the PF in real-time, eliminating the need to reconstruct the PF for new trade-off preferences among 
+                objectives.
+            </p>
+            <a href="https://arxiv.org/abs/2408.09976" target="_blank">[paper]</a>
+            <a href="https://github.com/tsudalab/POPSL" target="_blank">[code]</a>            
+        </div>                
+        <div class="project">
+            <h3> A Confidence Machine for Sparse High-order Interaction Model</h3>
+            <p style="text-align:justify;">The Sparse High-order Interaction Model (SHIM) is an interpretable yet non-linear 
+                machine learning model. It is a useful model that can capture the interactions of many features, which is 
+                crucial in many real-world applications, such as gene-gene interactions and identifying groups of mutations. 
+                However, finding a point prediction in regression is often not enough, and many real-world high-stakes 
+                decision-making problems demand a prediction band (or interval) that encloses the point prediction. We 
+                developed an efficient algorithm that can produce statistically efficient (narrow) prediction intervals 
+                containing the point prediction of a SHIM.
+            </p>
+            <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/sta4.633" target="_blank">[paper]</a>
+            <a href="https://github.com/DipteshDas/CP-SHIM" target="_blank">[code]]</a>            
+        </div>  
+        <div class="project">
+            <h3> Feature Importance Measurement based on Decision Tree Sampling</h3>
+            <p style="text-align:justify;">Random forest is effective for prediction tasks but the randomness of tree 
+                generation hinders interpretability in feature importance analysis. To address this, we proposed DT-Sampler, 
+                a SAT-based method for measuring feature importance in a tree-based model. Our method has fewer parameters 
+                than random forest and provides higher interpretability and stability for the analysis of real-world problems.
+            </p>
+            <a href="https://openreview.net/forum?id=Mn4AXZwJIZ#all" target="_blank">[paper]</a>
+            <a href="https://github.com/tsudalab/DT-sampler" target="_blank">[code]]</a>            
+        </div>       
+        <div class="project">
+            <h3>Fast and More Powerful Selective Inference for Sparse High-order Interaction Model</h3>
+            <p style="text-align:justify;">Finding statistically significant (low p-values) high-order
+                feature interactions are challenging because of the intrinsic high
+                dimensionality of the combinatorial effects. Another problem
+                in data-driven modeling is the effect of “cherry-picking” (i.e.,
+                selection bias). We developed a fast algorithm using a branch-and-bound tree pruning strategy that can correct 
+                the selection bias and provide statistically valid (provides selection bias corrected p-values) high-order 
+                feature interactions.</p>
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21238" target="_blank">[paper]</a>
+            <a href="https://github.com/DipteshDas/SI-SHIM" target="_blank">[code]</a>            
+        </div> 
+        <div class="project">
+            <h3>
+                Sparse High-order Interaction Model with Rejection option (SHIMR)</h3>
+            <p style="text-align:justify;">SHIMR is an interpretable, non-linear machine learning model that includes a 
+                rejection option, which is essential for high-stakes decision-making, such as in medical diagnosis. 
+                This model can identify uncertain areas within the data and has the ability to refrain from making a 
+                decision when it lacks confidence. For instance, it can automatically pinpoint samples that are close 
+                to the decision boundary and choose not to make a decision for those instances. SHIMR is equipped to 
+                address class imbalance issues, and its visualization module illustrates the relationships between model 
+                scores, feature interactions, and their importance, making it a valuable tool for promoting trustworthy AI. </p>
+                <a href="https://peerj.com/articles/6543/" target="_blank">[paper]</a>
+                <a href="https://github.com/tsudalab/SHIMR?tab=readme-ov-file#shimr-sparse-high-order-interaction-model-with-rejection-option" 
+            target="_blank">[code]</a>            
+        </div><br\><br/><br/><br/>      
+        <!-- Add more projects as needed -->
+    </section>
+    <footer>
+        <p>Contact: [firstname].[lastname]@edu.k.u-tokyo.ac.jp</p>
+    </footer>
+</body>
+</html>
+
