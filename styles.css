@@ -74,13 +74,15 @@ footer {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
-  
   .pub-list {
-    padding-left: 1.2rem;   /* leftmargin=* */
+    list-style-type: decimal;   /* or disc if you prefer bullets */
+    margin: 0;                  /* removes default browser margin */
+    padding-left: 1rem;         /* small consistent left indent */
   }
   
   .pub-list li {
-    margin-bottom: 1.2rem;  /* itemsep=0.3cm equivalent */
+    margin-bottom: 1.2rem;      /* spacing between items */
+    line-height: 1.5;
   }
   
   .pub-title {
@@ -94,7 +96,7 @@ footer {
   
   .pub-venue {
     font-size: 0.9rem;
-    color: #555;            /* textgray */
+    color: #555;
     margin-top: 0.2rem;
   }
   
@@ -108,19 +110,12 @@ footer {
   .pub-list a:hover {
     text-decoration: underline;
   }
+  
 
-  #patents {
-    margin-top: 2rem;
-  }
-  
-  #patents h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
   .patent-list {
     list-style-type: disc;
-    padding-left: 1.4rem;
+    margin: 0;            /* removes default margin */
+    padding-left: 1rem;   /* small consistent indent */
   }
   
   .patent-list li {
@@ -151,6 +146,7 @@ footer {
   .patent-ref a:hover {
     text-decoration: underline;
   }
+  
   
   
 
