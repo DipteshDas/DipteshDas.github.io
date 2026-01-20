@@ -66,3 +66,91 @@ footer {
     width: 100%;
 }
 
+#selected_publications {
+    margin-top: 2rem;
+  }
+  
+  #selected_publications h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pub-list {
+    padding-left: 1.2rem;   /* leftmargin=* */
+  }
+  
+  .pub-list li {
+    margin-bottom: 1.2rem;  /* itemsep=0.3cm equivalent */
+  }
+  
+  .pub-title {
+    font-weight: bold;
+    font-size: 1.05rem;
+  }
+  
+  .pub-authors {
+    margin-top: 0.2rem;
+  }
+  
+  .pub-venue {
+    font-size: 0.9rem;
+    color: #555;            /* textgray */
+    margin-top: 0.2rem;
+  }
+  
+  .pub-list a {
+    display: inline-block;
+    margin-top: 0.2rem;
+    color: #0047ab;
+    text-decoration: none;
+  }
+  
+  .pub-list a:hover {
+    text-decoration: underline;
+  }
+
+  #patents {
+    margin-top: 2rem;
+  }
+  
+  #patents h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .patent-list {
+    list-style-type: disc;
+    padding-left: 1.4rem;
+  }
+  
+  .patent-list li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .patent-title {
+    font-weight: bold;
+    font-size: 1.05rem;
+  }
+  
+  .patent-authors {
+    margin-top: 0.2rem;
+  }
+  
+  .patent-ref {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.2rem;
+  }
+  
+  .patent-ref a {
+    color: #0047ab;
+    text-decoration: none;
+  }
+  
+  .patent-ref a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
