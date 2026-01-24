@@ -110,6 +110,15 @@ footer {
   .pub-list a:hover {
     text-decoration: underline;
   }
+
+  .pub-legend {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.4rem;     /* space above the legend */
+    margin-bottom: 1rem;    /* space below the legend */
+    font-style: italic;
+  }
+  
   
 
   .patent-list {
