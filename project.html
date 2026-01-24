@@ -22,6 +22,42 @@
     <section id="projects">
         <h2>Projects (Selected)</h2>
         <div class="project">
+            <h3>Statistically Robust Sparse High-order Interaction Model</h3>
+            <p style="text-align:justify;">Deep learning models often achieve high accuracy but lack interpretability, making them unsuitable for critical applications such as medical diagnosis, biomolecule design, criminal justice, etc.
+                The Sparse High-Order Interaction Model (SHIM)
+                addresses this limitation by providing both transparency and predictive reliability. However, realworld data often contain outliers, which can distort model performance. To overcome this, we
+                propose Huberized-SHIM, an extension of SHIM
+                that integrates Huber loss-based robust regression to mitigate the impact of outliers. We introduce a homotopy-based exact regularization path
+                algorithm and a novel tree-pruning criterion to
+                efficiently manage interaction complexity. Additionally, we incorporate the conformal prediction
+                framework to enhance statistical reliability. Empirical evaluations on synthetic and real-world datasets
+                demonstrate the superior robustness and accuracy of Huberized-SHIM in high-stakes decisionmaking contexts.
+            </p>
+            <a href="https://openreview.net/pdf?id=BL6vK8GeoR" target="_blank">[paper]</a>
+            <!-- <a href="" target="_blank">[code]</a>             -->
+        </div>
+        <div class="project">
+            <h3> DT-sampler: A SAT-based Decision Tree Ensemble</h3>
+            <p style="text-align:justify;">Interpretable (or explainable) machine learning models, such as decision trees, play a crucial role in the context of trustworthy AI. However, finding optimal decision trees (i.e., minimum size and maximum accuracy trees) is not a simple task and remains an active area of research. While a single decision tree has limited expressivity, using an ensemble of decision trees can effectively capture the complex structures found in many real-world applications. Many existing tree ensemble methods are greedy and suboptimal, and often suffer from randomness in the tree generation process. In this paper, we introduce DT-sampler, a SAT-based decision tree ensemble which allows explicit control over both the size and accuracy of the sampled trees. We developed a novel SAT-based encoding method that utilizes only branch nodes, resulting in a compact representation of decision tree space. Additionally, standard point predictions made using decision tree ensembles do not offer any statistical guarantee over miscoverage rate. We employ conformal prediction (CP), a distribution-free statistical framework which provides a valid finite-sample coverage guarantee, to demonstrate that DT-sampler is statistically more efficient and produces stable results when compared with random forest classifier. We demonstrate the effectiveness of our method through several benchmark and real-world datasets.
+            </p>
+            <a href="https://dl.acm.org/doi/10.1145/3787470.3787484" target="_blank">[paper]</a>
+            <a href="https://github.com/tsudalab/DT-sampler-CP" target="_blank">[code]]</a>            
+        </div> 
+        <div class="project">
+            <h3> CRYSIM: Prediction of Symmetric Structures of Large Crystals with GPU-based Ising Machines</h3>
+            <p style="text-align:justify;">Solving black-box optimization problems with Ising machines is increasingly common in materials science. However, their application to crystal structure prediction (CSP) is still ineffective due to symmetry agnostic encoding of atomic coordinates. We introduce CRYSIM, an algorithm that encodes the space group, the Wyckoff positions combination, and coordinates of independent atomic sites as separate variables. This encoding reduces the search space substantially by exploiting the symmetry in space groups. When CRYSIM is interfaced to Fixstars Amplify, a GPU-based Ising machine, its prediction performance is competitive with CALYPSO and Bayesian optimization for crystals containing more than 150 atoms in a unit cell. Although it is not realistic to interface CRYSIM to current small-scale quantum devices, it has the potential to become the standard CSP algorithm in the coming quantum age.
+            </p>
+            <a href="https://www.nature.com/articles/s42005-025-02380-y" target="_blank">[paper]</a>
+            <a href="https://github.com/tsudalab/CRYSIM" target="_blank">[code]]</a>            
+        </div>
+        <div class="project">
+            <h3> Molecule Graph Networks with Many-Body Equivariant Interactions</h3>
+            <p style="text-align:justify;">Message passing neural networks have demonstrated significant efficacy in predicting molecular interactions. Introducing equivariant vectorial representations augments expressivity by capturing geometric data symmetries, thereby improving model accuracy. However, two-body bond vectors in opposition may cancel each other out during message passing, leading to the loss of directional information on their shared node. In this study, we develop Equivariant N-body Interaction Networks (ENINet) that explicitly integrates l = 1 equivariant many-body interactions to enhance directional symmetric information in the message passing scheme. We provided a mathematical analysis demonstrating the necessity of incorporating many-body equivariant interactions and generalized the formulation to N-body interactions. Experiments indicate that integrating many-body equivariant representations enhances prediction accuracy across diverse scalar and tensorial quantum chemical properties.
+            </p>
+            <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.5c00466" target="_blank">[paper]</a>
+            <a href="https://github.com/tsudalab/ENINet" target="_blank">[code]]</a>            
+        </div> 
+        <div class="project">
             <h3>Preference-Optimized Pareto Set Learning (PO-PSL) for Blackbox Optimization</h3>
             <p style="text-align:justify;">Multi-Objective Optimization (MOO) presents a significant challenge in various 
                 real-world applications. For complex problems, it is usually impossible to find a single solution that optimizes 
@@ -47,7 +83,7 @@
             <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/sta4.633" target="_blank">[paper]</a>
             <a href="https://github.com/DipteshDas/CP-SHIM" target="_blank">[code]]</a>            
         </div>  
-        <div class="project">
+        <!-- <div class="project">
             <h3> Feature Importance Measurement based on Decision Tree Sampling</h3>
             <p style="text-align:justify;">Random forest is effective for prediction tasks but the randomness of tree 
                 generation hinders interpretability in feature importance analysis. To address this, we proposed DT-Sampler, 
@@ -56,7 +92,7 @@
             </p>
             <a href="https://openreview.net/forum?id=Mn4AXZwJIZ#all" target="_blank">[paper]</a>
             <a href="https://github.com/tsudalab/DT-sampler" target="_blank">[code]]</a>            
-        </div>       
+        </div>        -->
         <div class="project">
             <h3>Fast and More Powerful Selective Inference for Sparse High-order Interaction Model</h3>
             <p style="text-align:justify;">Finding statistically significant (low p-values) high-order
